@@ -660,17 +660,17 @@ body {
   transform: scaleX(1);
 }
 /* ===== CARD WRAPPER (same feel as education/projects) ===== */
-.card.skills-card {
+/*.card.skills-card {
   margin: 3rem 0 2rem;
   padding: 1.4rem 1.6rem 1.8rem;
   border-radius: 20px;
   background: #050816;              /* dark card */
-  border: 1px solid #1f2937;
+  /*border: 1px solid #1f2937;
   box-shadow: 0 18px 40px rgba(0,0,0,0.7);
 }
 
 /* Section title with blue line */
-.section-title {
+/*.section-title {
   font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 1.1rem;
@@ -690,7 +690,7 @@ body {
 
 /* ===== SKILLS LAYOUT ===== */
 
-:root {
+/*:root {
   --surface: #020617;
   --text: #e5e7eb;
   --muted: #9ca3af;
@@ -698,7 +698,7 @@ body {
 }
 
 /* 2-column grid */
-.skills-grid {
+/*.skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -706,7 +706,7 @@ body {
 }
 
 /* Each row card */
-.skill-row {
+/*.skill-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -724,7 +724,7 @@ body {
 }
 
 /* Right side */
-.skill-meta {
+/*.skill-meta {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -733,7 +733,7 @@ body {
 }
 
 /* Track */
-.mini-bar {
+/*.mini-bar {
   flex: 1;
   height: 6px;
   background: #111827;
@@ -742,7 +742,7 @@ body {
 }
 
 /* Fill: width comes from CSS variable --fill */
-.mini-fill {
+/*.mini-fill {
   height: 100%;
   background: linear-gradient(90deg, var(--accent), #60a5fa);
   width: var(--fill, 0%);
@@ -750,12 +750,13 @@ body {
 }
 
 /* Hover: thoda aur bar grow + glow feel */
-.skill-row:hover .mini-fill {
+/*.skill-row:hover .mini-fill {
   width: calc(var(--fill, 0%) + 6%);
 }
 
 /* Mobile: 1 column */
-@media (max-width: 760px) {
+/*@media (max-width: 760px) {
   .skills-grid { grid-template-columns: 1fr; }
   .skill-row { padding: 10px; }
 }
+*/
