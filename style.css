@@ -659,104 +659,49 @@ body {
 .project-card:hover .project-link::after {
   transform: scaleX(1);
 }
-/* ===== CARD WRAPPER (same feel as education/projects) ===== */
-/*.card.skills-card {
-  margin: 3rem 0 2rem;
-  padding: 1.4rem 1.6rem 1.8rem;
-  border-radius: 20px;
-  background: #050816;              /* dark card */
-  /*border: 1px solid #1f2937;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+/* ========== Skills Section Styles ========== */
+.skills-section {
+  max-width: var(--max-width);
+  margin: 0 auto 3.5rem;
+  padding: 0 1.5rem;
 }
 
-/* Section title with blue line */
-/*.section-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #f9fafb;
-}
-
-.section-title::before {
-  content: "";
-  width: 3px;
-  height: 18px;
-  border-radius: 999px;
-  background: #3b82f6;
-}
-
-/* ===== SKILLS LAYOUT ===== */
-
-/*:root {
-  --surface: #020617;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --accent: #22c1c3;
-}
-
-/* 2-column grid */
-/*.skills-grid {
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-top: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-/* Each row card */
-/*.skill-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 8px 10px;
-  border-radius: 8px;
-  background: var(--surface);
-  border: 1px solid rgba(15, 23, 42, 0.7);
+.skill-card {
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  background: var(--card-color);
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
 }
 
-.skill-row .skill-name {
-  font-weight: 700;
-  color: var(--text);
-  min-width: 90px;
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.9);
 }
 
-/* Right side */
-/*.skill-meta {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
-  justify-content: flex-end;
+.skill-card i {
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 
-/* Track */
-/*.mini-bar {
-  flex: 1;
-  height: 6px;
-  background: #111827;
-  border-radius: 999px;
-  overflow: hidden;
+.skill-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-main);
 }
 
-/* Fill: width comes from CSS variable --fill */
-/*.mini-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), #60a5fa);
-  width: var(--fill, 0%);
-  transition: width .6s cubic-bezier(.2,.8,.2,1);
+.skill-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
-
-/* Hover: thoda aur bar grow + glow feel */
-/*.skill-row:hover .mini-fill {
-  width: calc(var(--fill, 0%) + 6%);
-}
-
-/* Mobile: 1 column */
-/*@media (max-width: 760px) {
-  .skills-grid { grid-template-columns: 1fr; }
-  .skill-row { padding: 10px; }
-}
-*/
